@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">Thêm Mới Cuốn Sách</div>
+    <div class="card-body">
+      <form #ngFormCreate='ngForm' (ngSubmit)= "createBook(ngFormCreate)">
+        <tr>
+          <td>Tên Sách</td>
+          <td><input class="form-control" type="text" ngModel name="title"></td>
+        </tr>
+        <tr>
+          <td>Tác giả</td>
+          <td><input type="text" class="form-control" ngModel name="author"></td>
+        </tr>
+        <tr>
+          <td>Mô tả</td>
+          <td><input class="form-control" type="text" ngModel name="description"></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-success">Save</button></td>
+        </tr>
+      </form>
+    </div>
+  </div>
+</div>

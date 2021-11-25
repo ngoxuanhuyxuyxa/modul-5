@@ -1,0 +1,18 @@
+<form #ngFormCreate='ngForm' (ngSubmit)= "update(ngFormCreate)">
+  <tr>
+    <td>Tên Sách</td>
+    <td><input type="text" [ngModel]="book.title" name="title"></td>
+  </tr>
+  <tr>
+    <td>Tác giả</td>
+    <td><input type="text" [ngModel]="book.author" name="author"></td>
+  </tr>
+  <tr>
+    <td>Mô tả</td>
+    <td><input type="text" [ngModel]="book.description" name="description"></td>
+  </tr>
+  <tr>
+    <td><button>Save</button></td>
+  </tr>
+
+</form>

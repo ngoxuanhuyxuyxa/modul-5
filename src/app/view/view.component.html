@@ -1,0 +1,20 @@
+<table>
+  <h1>Danh Sách Cuốn Sách</h1>
+  <tr>
+    <td>#</td>
+    <td>Tên sách</td>
+    <td>Tác giả</td>
+    <td>Mô Tả</td>
+  </tr>
+  <tr>
+    <td>{{book.id}}</td>
+    <td>{{book.title}}</td>
+    <td >{{book.author}}</td>
+    <td>{{book.description}}</td>
+  </tr>
+</table>
+<td><button routerLink="/books/edit/{{book.id}}">Update</button></td>
+<td><button routerLink="/books/delete/{{book.id}}">Delete</button></td>
+<button routerLink="/books">Back</button>
+
+

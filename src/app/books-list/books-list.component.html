@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header">
+    <h1>Danh Sách Cuốn Sách</h1>
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên sách</th>
+        <th scope="col">Tác giả</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let book of books">
+        <th scope="col">{{book.id}}</th>
+        <td><a routerLink="/books/view/{{book.id}}">{{book.title}}</a></td>
+        <td >{{book.author}}</td>
+        <td><button routerLink="/books/edit/{{book.id}}" class="btn btn-primary">Update</button></td>
+        <td><button routerLink="/books/delete/{{book.id}}" class="btn btn-outline-danger">Delete</button></td>
+      </tr>
+      </tbody>
+    </table>
+    <button routerLink="/books/create" class="btn btn-success">CreateBook</button>
+  </div>
+</div>
+
